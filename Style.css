@@ -8,6 +8,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     padding: 20px;
+    min-width: 900px;
     max-width: 1000px;
     background-color: #ebdcb1;
     line-height: 1.7;
@@ -24,7 +25,8 @@ img, video, iframe {
 }
 
 button {
-    padding: 20px;
+    min-height: 100%;
+    padding: 28px;
     border: 3px solid #17130c;
     transition: transform 0.2s ease;
     border-radius: 4px;
@@ -34,11 +36,9 @@ button {
     cursor: pointer;
 }
 
-/* Container flex: boleh turun baris */
 #Rbutton, #SE1, #SE2, #SE3, #SE4, #A1, #A2, #A3, #A4, #A5 {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -99,58 +99,4 @@ table, th, td {
     border-collapse: collapse;
     padding: 10px;
     margin: 10px 20px 10px;
-}
-
-table {
-    max-width: 100%;
-}
-
-/* ====== Tampilan HP ====== */
-@media (max-width: 600px) {
-    body {
-        padding: 12px;
-        font-size: 16px;
-        line-height: 1.6;
-    }
-
-    h1 { font-size: 1.6rem; }
-    h2 { font-size: 1.3rem; }
-
-    button {
-        width: 100%;
-        min-width: 0;
-        padding: 16px;
-        box-shadow: 4px 4px 0 #17130c;
-    }
-
-    #Rbutton, #SE1, #SE2, #SE3, #SE4, #A1, #A2, #A3, #A4, #A5 {
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    footer {
-        flex-direction: column;
-        gap: 8px;
-        text-align: center;
-    }
-
-    #desc {
-        font-size: 16px;
-    }
-
-    [id^="jn"] {
-        padding: 0 12px;
-    }
-
-    table, th, td {
-        margin: 6px 0;
-        padding: 6px;
-        font-size: 14px;
-    }
-
-    /* Tabel lebar bisa digeser ke samping */
-    table {
-        display: block;
-        overflow-x: auto;
-    }
 }
