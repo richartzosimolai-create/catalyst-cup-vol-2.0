@@ -1,8 +1,3 @@
-
-/* ==============================
-   GENERAL
-============================== */
-
 * {
     box-sizing: border-box;
 }
@@ -11,89 +6,52 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 5%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1000px;
     background-color: #ebdcb1;
     line-height: 1.7;
     font-size: 17px;
-    color: #17130c;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1, h2, p {
     text-align: center;
-    line-height: 1.2;
-    margin-bottom: 20px;
 }
 
-h2 {
-    text-align: center;
-    line-height: 1.3;
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
 }
 
-p {
-    text-align: center;
+button {
+    padding: 20px;
+    border: 3px solid #17130c;
+    transition: transform 0.2s ease;
+    border-radius: 4px;
+    box-shadow: 6px 6px 0 #17130c;
+    min-width: 45%;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Container flex: boleh turun baris */
+#Rbutton, #SE1, #SE2, #SE3, #SE4, #A1, #A2, #A3, #A4, #A5 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 hr {
-    height: 2px;
+    height: 1px;
     width: 100%;
-    background-color: #17130c;
+    background-color: black;
     border: none;
-    margin: 28px 0;
-}
-
-
-/* ==============================
-   SPORT AND ART BUTTONS
-============================== */
-
-#Rbutton {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 24px;
-
-    width: 100%;
-    max-width: none;
-    align-self: stretch;
-
-    margin: 35px 0;
-    padding: 0;
-}
-
-#Rbutton button,
-#Rbutton #sport,
-#Rbutton #art {
-    display: block;
-    flex: 1 1 0 !important;
-
-    width: 0;
-    min-width: 0;
-    max-width: none;
-
-    min-height: 190px;
-    padding: 35px 25px;
-
-    border: 3px solid #17130c;
-    border-radius: 12px;
-    box-shadow: 7px 7px 0 #17130c;
-
-    font-size: 25px;
-    font-weight: 800;
-    line-height: 1.3;
-    text-align: center;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-#Rbutton button:hover {
-    transform: translateY(-3px);
-    box-shadow: 7px 10px 0 #17130c;
 }
 
 #sport {
@@ -106,90 +64,26 @@ hr {
     color: white;
 }
 
-
-/* ==============================
-   DESCRIPTION
-============================== */
-
 #desc {
     text-align: justify;
     text-indent: 40px;
-    line-height: 1.7;
+    line-height: 1.5;
     font-size: 18px;
 }
 
-
-/* ==============================
-   FLEX ROWS
-============================== */
-
-#SE1,
-#SE2,
-#SE3,
-#SE4,
-#A1,
-#A2,
-#A3,
-#A4,
-#A5 {
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-
-/* ==============================
-   RULES / JUKNIS BOXES
-============================== */
-
-#jnBSDM,
-#jnBSMPAI,
-#jnFSD,
-#jnMLSD,
-#jnMLSMP,
-#jnSVSD,
-#jnSTSD,
-#jnBC,
-#jnDDSMP,
-#jnDSD,
-#jnSMSMP,
-#jnMDSMP,
-#jnSBSD,
-#jnMDSD,
-#jnFSMP {
+/* Kotak konten (jn...) */
+#jnBSDM, #jnBSMPAI, #jnFSD, #jnMLSD, #jnMLSMP, #jnSVSD, #jnSTSD,
+#jnBC, #jnDDSMP, #jnDSD, #jnSMSMP, #jnMDSMP, #jnSBSD, #jnMDSD, #jnFSMP {
     background-color: white;
-    border: 3px solid #17130c;
-    border-radius: 10px;
-    padding: 12px 20px;
-    margin: 18px 0;
-    box-shadow: 4px 4px 0 rgba(23, 19, 12, 0.15);
+    border: 3px solid black;
+    padding: 0 20px;
 }
 
-#jnBSDM p,
-#jnBSMPAI p,
-#jnFSD p,
-#jnMLSD p,
-#jnMLSMP p,
-#jnSVSD p,
-#jnSTSD p,
-#jnBC p,
-#jnDDSMP p,
-#jnDSD p,
-#jnSMSMP p,
-#jnMDSMP p,
-#jnSBSD p,
-#jnMDSD p,
-#jnFSMP p {
+#jnBSDM p, #jnBSMPAI p, #jnFSD p, #jnMLSD p, #jnMLSMP p, #jnSVSD p, #jnSTSD p,
+#jnBC p, #jnDDSMP p, #jnDSD p, #jnSMSMP p, #jnMDSMP p, #jnSBSD p, #jnMDSD p, #jnFSMP p {
     text-align: start;
     text-indent: 20px;
 }
-
-
-/* ==============================
-   SPECIAL TEXT
-============================== */
 
 #jnSTSD ol strong {
     font-size: 14px;
@@ -200,192 +94,63 @@ hr {
     font-size: 16px;
 }
 
-
-/* ==============================
-   TABLES
-============================== */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 10px 20px 10px;
+}
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    background-color: white;
+    max-width: 100%;
 }
 
-table,
-th,
-td {
-    border: 1px solid #17130c;
-}
-
-th,
-td {
-    padding: 10px;
-    text-align: center;
-}
-
-
-/* ==============================
-   FOOTER
-============================== */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 30px;
-}
-
-
-/* ==============================
-   TABLET
-============================== */
-
-@media (max-width: 900px) {
-    body {
-        margin: 4%;
-        font-size: 16px;
-    }
-
-    #Rbutton {
-        gap: 18px;
-    }
-
-    #Rbutton button,
-    #Rbutton #sport,
-    #Rbutton #art {
-        min-height: 175px;
-        padding: 28px 18px;
-        font-size: 22px;
-    }
-
-    #desc {
-        font-size: 17px;
-        text-indent: 30px;
-    }
-}
-
-
-/* ==============================
-   MOBILE
-============================== */
-
+/* ====== Tampilan HP ====== */
 @media (max-width: 600px) {
     body {
-        margin: 20px 16px;
-        font-size: 15px;
-        line-height: 1.65;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    #Rbutton {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-
-        width: 100%;
-        gap: 12px;
-        margin: 28px 0;
-    }
-
-    #Rbutton button,
-    #Rbutton #sport,
-    #Rbutton #art {
-        flex: 1 1 0 !important;
-
-        width: 0;
-        min-width: 0;
-        max-width: none;
-
-        min-height: 155px;
-        padding: 22px 8px;
-
-        border-width: 2px;
-        border-radius: 9px;
-        box-shadow: 5px 5px 0 #17130c;
-
-        font-size: 18px;
-        line-height: 1.35;
-        overflow-wrap: anywhere;
-    }
-
-    #Rbutton button:hover {
-        transform: translateY(-2px);
-        box-shadow: 5px 7px 0 #17130c;
-    }
-
-    #desc {
+        padding: 12px;
         font-size: 16px;
-        text-align: justify;
-        text-indent: 24px;
-        line-height: 1.7;
+        line-height: 1.6;
     }
 
-    #jnBSDM,
-    #jnBSMPAI,
-    #jnFSD,
-    #jnMLSD,
-    #jnMLSMP,
-    #jnSVSD,
-    #jnSTSD,
-    #jnBC,
-    #jnDDSMP,
-    #jnDSD,
-    #jnSMSMP,
-    #jnMDSMP,
-    #jnSBSD,
-    #jnMDSD,
-    #jnFSMP {
-        padding: 10px 14px;
-        border-width: 2px;
-        border-radius: 8px;
-        margin: 16px 0;
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.3rem; }
+
+    button {
+        width: 100%;
+        min-width: 0;
+        padding: 16px;
+        box-shadow: 4px 4px 0 #17130c;
     }
 
-    #jnBSDM p,
-    #jnBSMPAI p,
-    #jnFSD p,
-    #jnMLSD p,
-    #jnMLSMP p,
-    #jnSVSD p,
-    #jnSTSD p,
-    #jnBC p,
-    #jnDDSMP p,
-    #jnDSD p,
-    #jnSMSMP p,
-    #jnMDSMP p,
-    #jnSBSD p,
-    #jnMDSD p,
-    #jnFSMP p {
-        text-indent: 12px;
-        overflow-wrap: anywhere;
-    }
-
-    table {
-        font-size: 13px;
-    }
-
-    th,
-    td {
-        padding: 7px;
+    #Rbutton, #SE1, #SE2, #SE3, #SE4, #A1, #A2, #A3, #A4, #A5 {
+        flex-direction: column;
+        gap: 14px;
     }
 
     footer {
-        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
         text-align: center;
+    }
+
+    #desc {
+        font-size: 16px;
+    }
+
+    [id^="jn"] {
+        padding: 0 12px;
+    }
+
+    table, th, td {
+        margin: 6px 0;
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    /* Tabel lebar bisa digeser ke samping */
+    table {
+        display: block;
+        overflow-x: auto;
     }
 }
