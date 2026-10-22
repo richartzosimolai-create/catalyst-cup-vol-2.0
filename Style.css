@@ -4,8 +4,6 @@ body {
     justify-content: center;
     margin: 5%;
     background-color: #ebdcb1;
-    line-height: 1.7;
-    font-size: 17px;
 }
 
 h1 {
@@ -80,11 +78,6 @@ hr {
     justify-content: space-around;
 }
 
-#SE4 {
-    display: flex;
-    justify-content: space-around;
-}
-
 #jnBSDM p {
     text-align: start;
     text-indent: 20px;
@@ -110,6 +103,7 @@ hr {
 #jnFSD p {
     text-align: start;
     text-indent: 20px;
+    line-height: 2; 
 }
 
 #jnFSD {
@@ -140,35 +134,26 @@ hr {
     padding: 0px 20px 0px;
 }
 
-#jnSVSD p {
+#jnMDSD p {
     text-align: start;
     text-indent: 20px;
 }
 
-#jnSVSD {
+#jnMDSD {
     background-color: white;
     border: 3px solid  black;
     padding: 0px 20px 0px;
 }
 
-#jnSTSD p {
+#jnMDSMP p {
     text-align: start;
     text-indent: 20px;
 }
 
-#jnSTSD {
+#jnMDSMP {
     background-color: white;
     border: 3px solid  black;
     padding: 0px 20px 0px;
-}
-
-#jnSTSD ol strong {
-    font-size: 14px;
-}
-
-.pbiasa {
-    font-weight: normal;
-    font-size: 16px;
 }
 
 #jnBC p {
@@ -202,60 +187,4 @@ hr {
     background-color: white;
     border: 3px solid  black;
     padding: 0px 20px 0px;
-}
-
-#jnSMSMP p {
-    text-align: start;
-    text-indent: 20px;
-}
-
-#jnSMSMP {
-    background-color: white;
-    border: 3px solid  black;
-    padding: 0px 20px 0px;
-}
-
-#jnMDSMP p {
-    text-align: start;
-    text-indent: 20px;
-}
-
-#jnMDSMP {
-    background-color: white;
-    border: 3px solid  black;
-    padding: 0px 20px 0px;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-    margin: 10px 20px 10px;
-}
-
-#jnSBSD p {
-    text-align: start;
-    text-indent: 20px;
-}
-
-#jnSBSD {
-    background-color: white;
-    border: 3px solid  black;
-    padding: 0px 20px 0px;
-}
-
-#jnMDSD p, #jnFSMP p {
-    text-align: start;
-    text-indent: 20px;
-}
-
-#jnMDSD, #jnFSMP {
-    background-color: white;
-    border: 3px solid  black;
-    padding: 0px 20px 0px;
-}
-
-#A1, #A2, #A3, #A4, #A5 {
-    display: flex;
-    justify-content: space-around;
 }
