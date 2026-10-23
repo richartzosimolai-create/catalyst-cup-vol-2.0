@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSMPA</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<header>
+    <button class="BButton button" onclick="window.location.href='indexx.html'">
+        <strong><h2>←</h2></strong>
+    </button>
+</header>
+<body>
+    <h1>Basket SMP Putra</h1>
+    <h4>Berikut juknis (Petunjuk Teknis) untuk bidang lomba Basket SMP Putra:</h4>
+    <div id="jnBSMPAI">
+        <h5>1. JUMLAH PERTANDINGAN</h5>
+        <p>Setiap tim terdiri dari 5 orang pemain inti, maksimal 7 orang cadangan dan maksimal 2 official.</p>
+        <h5>2. FORMAT PERTANDINGAN</h5>
+        <p>Pertandingan menggunakan sistem gugur.</p>
+        <h5>3. DURASI PERTANDINGAN</h5>
+        <p>Waktu pertandingan adalah 10 menit × 4 dengan waktu kotor. Setiap tim mendapatkan 1 timeout untuk setiap quarter-nya (30 detik).</p>
+        <p>Jika di first half tidak dipakai, maka timeout akan hangus. Untuk second half, jika tidak dipakai di quarter 3, diperbolehkan untuk melakukan timeout 2 kali di quarter 4.</p>
+        <h5>4. PERATURAN PERTANDINGAN</h5>
+        <ol>
+            <li>Setiap tim terdiri dari 5 orang pemain inti, maksimal 7 orang. Pemain cadangan maksimal 2.</li>
+            <li>Setiap tim wajib memiliki satu jersey tim berwarna terang dan gelap.</li>
+            <li>Setiap tim wajib didampingi oleh guru pembimbing atau pelatih, dan nomor handphone dari guru atau pelatih tersebut. Wajib disertakan beserta foto-nya di formulir pendaftaran.</li>
+            <li>Apabila tim tersebut tidak didampingi oleh guru pendamping, tim tersebut tidak diperbolehkan bertanding.</li>
+            <li>Sistem pertandingan adalah single-elimination bracket.</li>
+            <li>Pembayaran wajib dilakukan saat pendaftaran.</li>
+            <li>Jika ditemukan ada pemain yang tidak terdaftar atau bukan murid dari sekolah yang bersangkutan, maka tim tersebut akan didiskualifikasi.</li>
+            <li>Setiap sekolah hanya boleh mengirim satu tim untuk setiap kategori.</li>
+            <li>Peraturan yang digunakan adalah peraturan dari PERBASI.</li>
+        </ol>
+        <h5>BIAYA PENDAFTARAN & HADIAH</h5>
+        <p>Biaya pendaftaran: Rp250.000,00</p>
+        <p>Biaya Walk Out: Rp50.000,00</p>
+        <p>Hadiah:</p>
+        <p>-Juara 1: Rp1.000.000,00 + Piala & Sertifikat</p>
+        <p>-Juara 2: Rp750.000,00 + Piala & Sertifikat</p>
+    </div>
+
+    <form id="rgBSMPA" enctype="multipart/form-data">
+        <h1>Registrasi</h1>
+        <h3>Daftar Nama Pemain</h3>
+        <textarea id="players" name="players" rows="2" placeholder="Contoh:  Juliho Nathan, Richart Hung, ..." required></textarea>
+        <h3>Surat Keterangan Sekolah</h3>
+        <input type="file" id="schoolLetter" accept=".pdf,.jpg,.jpeg,.png" required>
+        <h3>Foto Kartu Pelajar</h3>
+        <input type="file" id="studentCard" accept="image/*, .pdf" required>
+        <h3>Nama Ketua Tim</h3>
+        <input type="text" id="leader" name="leader" placeholder="Contoh: Adrian Lie" required>
+        <h3>Nama Penanggung Jawab</h3>
+        <input type="text" id="responsible" name="responsible" placeholder="Contoh: Steven Santoso" required>
+        <h3>Nomor Telepon Penanggung Jawab</h3>
+        <input type="tel" id="phone" name="phone" placeholder="Contoh: 08123456789" pattern="08[0-9]{8,11}" required>
+        <h3>Email Penanggung Jawab</h3>
+        <input type="email" id="email" name="email" placeholder="Contoh: steven.Santoso51@gmail.com" required>
+        <h3>Bukti Transfer</h3>
+        <input type="file" id="transfer" name="transfer" accept="image/*,.pdf" required> <br><br>
+        <div class="BSubmit"><button type="submit" class="Submit button">Submit</button></div>
+
+        <p id="message"></p>
+    </form>
+</body>
+</html>
