@@ -267,6 +267,102 @@ button {
     min-height: 0;
 }
 
+/* Form Registrasi */
+#rgMDSMP {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: white;
+    border: 3px solid #17130c;
+    box-shadow: 6px 6px 0 #17130c;
+    border-radius: 4px;
+    gap: 10px;
+}
+
+/* Judul registrasi */
+#rgMDSMP h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Judul setiap input */
+#rgMDSMP h3 {
+    text-align: left;
+    margin: 12px 0 5px;
+}
+
+/* Input dan textarea */
+#rgMDSMP input:not([type="file"]),
+#rgMDSMP textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 2px solid #17130c;
+    border-radius: 4px;
+    background-color: white;
+    font: inherit;
+}
+
+/* Input file */
+#rgMDSMP input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #17130c;
+    background-color: #fffdf5;
+    border-radius: 4px;
+}
+
+/* Tombol submit */
+#rgMDSMP .BSubmit {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#rgMDSMP .Submit {
+    width: 100%;
+    max-width: 300px;
+    min-width: 0;
+    padding: 15px 20px;
+    background-color: #1676e8;
+    color: white;
+    border: 3px solid #17130c;
+    box-shadow: 5px 5px 0 #17130c;
+    cursor: pointer;
+}
+
+#rgMDSMP .Submit:hover {
+    transform: translate(-2px, -2px);
+}
+
+#rgMDSMP .Submit:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+/* Pesan berhasil atau gagal */
+#rgMDSMP #message {
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    #rgMDSMP {
+        padding: 20px 15px;
+        margin: 30px auto;
+    }
+
+    #rgMDSMP input[type="file"] {
+        font-size: 14px;
+    }
+}
+
 /* Transisi tombol */
 button {
     transition: transform 0.2s ease;
